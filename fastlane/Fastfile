@@ -1,0 +1,35 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    update_fastlane
+    
+    if is_ci? do
+      cocoapods
+    end
+  end
+  
+  desc "Travis CI"
+  lane :travis do
+    test
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    scan(
+      scheme: "TartuWeatherTV",
+      scheme: "TartuWeatherTV",
+      configuration: "Debug",
+      xcargs: "CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=NO"
+    )
+  end
+
+end

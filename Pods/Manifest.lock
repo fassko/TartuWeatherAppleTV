@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (4.2.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - Fuzi (1.0.1)
+  - TartuWeatherProvider (0.1.2):
+    - Alamofire (~> 4.2)
+    - AlamofireImage (~> 3.2)
+    - Fuzi (~> 1.0)
+
+DEPENDENCIES:
+  - TartuWeatherProvider
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  Fuzi: 851403654bac55675aaeed815d0c8a1d3e3d3e8b
+  TartuWeatherProvider: e23499de8dba27075a4b3ba0c6ab02854296950c
+
+PODFILE CHECKSUM: 28f39ae6272c3d9dbec40092c8ae121de92dd21f
+
+COCOAPODS: 1.1.1

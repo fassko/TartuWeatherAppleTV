@@ -1,0 +1,6 @@
+framework module Pods_TartuWeatherTV {
+  umbrella header "Pods-TartuWeatherTV-umbrella.h"
+
+  export *
+  module * { export * }
+}

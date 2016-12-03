@@ -1,0 +1,4 @@
+app_identifier "com.fassko.TartuWeather" # The bundle identifier of your app
+apple_id "fassko@gmail.com" # Your Apple email address
+
+team_id "3SGNZQGS68"  # Developer Portal Team ID
