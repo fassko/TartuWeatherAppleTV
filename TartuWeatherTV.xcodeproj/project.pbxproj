@@ -138,6 +138,7 @@
 				6303A39B1DF2D565005257C6 /* Resources */,
 				1C7E62DCDEB03DE9EC005F7A /* [CP] Embed Pods Frameworks */,
 				7C30D14C7CAE984F7918B57C /* [CP] Copy Pods Resources */,
+				6303A3BD1DF31042005257C6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -259,6 +260,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TartuWeatherTV/Pods-TartuWeatherTV-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6303A3BD1DF31042005257C6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 34be06edc6f733a743335744b07a23f6a3e5b344 a9207ff06b3417aa4bf8c6408432761ca87c5b52dca8f2365b133eea61d407cc";
 		};
 		6E837AF54B89FA272A81BFB4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
