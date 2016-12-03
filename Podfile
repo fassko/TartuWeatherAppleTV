@@ -6,6 +6,8 @@ target 'TartuWeatherTV' do
 
   # Pods for TartuWeatherTV
   pod 'TartuWeatherProvider'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
   target 'TartuWeatherTVUITests' do
     inherit! :search_paths
