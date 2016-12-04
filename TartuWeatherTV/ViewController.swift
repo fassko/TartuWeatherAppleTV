@@ -43,6 +43,19 @@ class ViewController: UIViewController {
     // update for first time
     self.updateWeatherData()
     
+    NotificationCenter.default.addObserver(self, selector: #selector(restartTimer(notification:)), name: .UIApplicationDidBecomeActive, object: nil)
+  }
+  
+  /**
+    Restart timer when app comes in foreground
+    
+    - Parameters:
+      - notification: Notification object
+  */
+  func restartTimer(notification:Notification) {
+    
+    self.timer?.invalidate()
+    
     // update automatically
     self.timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(updateInterval), repeats: true, block: {timer in
       self.updateWeatherData()
