@@ -11,6 +11,11 @@ sudo gem install fastlane
 fastlane ios travis
 ```
 Travis CI
+### ios build
+```
+fastlane ios build
+```
+Build
 ### ios test
 ```
 fastlane ios test
