@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
+    // prevent screen saver
+    application.isIdleTimerDisabled = true
+    
     Fabric.with([Crashlytics.self])
 
     return true
